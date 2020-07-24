@@ -1,11 +1,16 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import './Navbar.css';
 import {Link} from 'react-router-dom';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import {CartContext} from '../../StateProvider';
 
 function Navbar() {
-  return (
+
+const [cart,setCart]=useContext(CartContext);
+
+
+  return (   
     <nav className="header">
         <Link to="/Login">
           <img className="header__logo" src=" http://pngimg.com/uploads/amazon/amazon_PNG25.png" alt="logo"/>
@@ -43,7 +48,7 @@ function Navbar() {
                {/* shopping icon*/}
                   <ShoppingCartIcon/>
                 {/* items addedin basket*/}
-                <span className="header__basketCount">0</span>
+             <span className="header__basketCount">{cart?.length}</span>
              </div>
            </Link>
   
