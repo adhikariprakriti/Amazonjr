@@ -18,7 +18,7 @@ function Home() {
                       rating={3}
                        image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/>
                    
-                   <Product id={12}
+                   <Product id={2}
                       title="this is very interesting book"
                       price={13}
                       rating={3}
@@ -27,19 +27,19 @@ function Home() {
             </div>
             
             <div className="home__row">
-                  <Product id={2}
+                  <Product id={3}
                       title="this is very interesting book"
                       price={13}
                       rating={3}
                        image="https://m.media-amazon.com/images/I/A1eTeNsmm7L._SR500,500_.jpg"/>
                    
-                   <Product id={3}
+                   <Product id={4}
                       title="this is very interesting book"
                       price={13}
                       rating={3}
                        image="https://in-files.apjonlinecdn.com/landingpages/family-pages/hp-business-solutions/images/laptop_products-row-1-img.png"/>
 
-                      <Product id={4}
+                      <Product id={5}
                       title="this is very interesting book"
                       price={13}
                       rating={3}
@@ -49,7 +49,7 @@ function Home() {
             </div>
 
             <div className="home__row">
-                  <Product id={5}
+                  <Product id={6}
                       title="this is very interesting book"
                       price={13}
                       rating={3}

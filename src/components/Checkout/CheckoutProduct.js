@@ -16,7 +16,11 @@ function CheckoutProduct({id,image,rating,price,title}) {
       
     }
     //console.log(selectedProduct);
-    setCart(()=>cart.splice(cart.indexOf(id),1));
+    const indexOfProduct=cart.findIndex(x => x.id === removeProduct.id);
+     console.log(indexOfProduct);
+    cart.splice(indexOfProduct,1);
+    console.log(cart);
+    setCart(()=>[...cart]);
     //console.log(cart);
  
     //const totalPrice=cart.reduce((acc,curr)=>acc-curr.price,....)
@@ -31,15 +35,16 @@ function CheckoutProduct({id,image,rating,price,title}) {
                  <small>$</small>
                   <strong>{price}</strong>
               </p>
-            <div className="checkutProduct__rating">
+            <div className="checkoutProduct__rating">
             
                 {Array(rating)
                 .fill()
                 .map(()=>(<p>p</p>))}
             </div>
 
-        </div>
         <button onClick={removeProduct}>Remove from cart</button>
+        </div>
+
       </div>
     
   );
