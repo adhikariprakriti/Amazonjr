@@ -7,7 +7,8 @@ import Subtotal from "./Subtotal";
 function Checkout() {
   const [cart,setCart]=useContext(CartContext);
   //const [totalPrice,setTotalPrice]=useContext(CartContext);
-  const totalPrice=cart.reduce((acc,curr)=>acc+curr.price,0)
+  const totalPrice=cart.reduce((acc,curr)=>acc+curr.price,0);
+
   
    const productsInCart = cart?.length===0?
                             (<h2>your cart is empty</h2>):

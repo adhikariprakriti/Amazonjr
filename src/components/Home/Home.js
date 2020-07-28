@@ -2,7 +2,7 @@ import React from 'react';
 import Product from '../Product/Product';
 import './Home.css';
 
-function Home() {
+function Home({user}) {
   return (
     
         <div className="home">
@@ -13,14 +13,16 @@ function Home() {
             {/* product id,description,price,rating,image */}
             <div className="home__row">
                   <Product id={1}
-                      title="this is very interesting book"
-                      price={13}
+                      title="Headphone"
+                      price={50}
+                      user={user}
                       rating={3}
                        image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/>
                    
                    <Product id={2}
-                      title="this is very interesting book"
-                      price={13}
+                      title="Lipstick"
+                      price={5}
+                      user={user}
                       rating={3}
                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS02wIG4ta6h_wOrBSe4EQ4CiattUk0v-7x5g&usqp=CAU"/>
 
@@ -28,20 +30,23 @@ function Home() {
             
             <div className="home__row">
                   <Product id={3}
-                      title="this is very interesting book"
-                      price={13}
+                      title="Bag"
+                      price={30}
+                      user={user}
                       rating={3}
                        image="https://m.media-amazon.com/images/I/A1eTeNsmm7L._SR500,500_.jpg"/>
                    
                    <Product id={4}
-                      title="this is very interesting book"
-                      price={13}
+                      title="Laptop"
+                      price={800}
+                       user={user}
                       rating={3}
                        image="https://in-files.apjonlinecdn.com/landingpages/family-pages/hp-business-solutions/images/laptop_products-row-1-img.png"/>
 
                       <Product id={5}
-                      title="this is very interesting book"
-                      price={13}
+                      title="Watch"
+                      price={100}
+                      user={user}
                       rating={3}
                        image="https://fossil.scene7.com/is/image/FossilPartnersRender/wb_mn_front_preview_sfcc?$topring=FossilPartnersRender/CTTSP0008_main&$case=FossilPartnersRender/CTCSPC220008_main&$dial=FossilPartnersRender/CTDSPC0005_main&$strap=FossilPartnersRender/S221302_baw&$sfcc_fos_baw_main_desktop$"/>
 
@@ -49,9 +54,10 @@ function Home() {
             </div>
 
             <div className="home__row">
-                  <Product id={6}
-                      title="this is very interesting book"
+                  <Product id={40}
+                      title="Dress"
                       price={13}
+                      user={user}
                       rating={3}
                        image="https://image.shutterstock.com/image-vector/vector-illustration-isolated-plus-size-260nw-1368418490.jpg"/>
                    
